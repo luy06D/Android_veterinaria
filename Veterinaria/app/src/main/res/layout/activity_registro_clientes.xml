@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".Registro_clientes">
+
+    <TextView
+        android:text="Registrarse"
+        android:fontFamily="@font/prueba2"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="203dp"
+        android:layout_marginTop="10dp"
+
+        app:srcCompat="@drawable/new_cliente"
+        tools:srcCompat="@drawable/new_cliente" />
+
+
+    <EditText
+        android:id="@+id/etApellidos"
+        android:hint="Apellidos"
+        android:fontFamily="@font/prueba2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="40dp"
+        android:maxLines="1"
+        android:paddingStart="20dp"
+        android:background="@drawable/input_style"/>
+
+
+    <EditText
+        android:id="@+id/etNombres"
+        android:fontFamily="@font/prueba2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:hint="Nombres"
+        android:layout_height="40dp"
+        android:maxLines="1"
+        android:paddingStart="20dp"
+        android:background="@drawable/input_style"/>
+
+
+    <EditText
+        android:id="@+id/etDni"
+        android:fontFamily="@font/prueba2"
+        android:layout_marginTop="20dp"
+        android:hint="DNI"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:maxLines="1"
+        android:paddingStart="20dp"
+        android:background="@drawable/input_style" />
+
+    <EditText
+        android:id="@+id/etClaveacceso"
+        android:fontFamily="@font/prueba2"
+        android:layout_marginTop="20dp"
+        android:inputType="textEmailAddress"
+        android:hint="Ingrese una contraseña"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:maxLines="1"
+        android:paddingStart="20dp"
+        android:background="@drawable/input_style" />
+
+
+
+
+    <Button
+        android:id="@+id/btRegistrarse"
+        android:layout_marginTop="60dp"
+        android:text="Registrar"
+        android:fontFamily="@font/prueba2"
+        android:backgroundTint="@color/celeste"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".Registro_mascota">
+
+    <TextView
+        android:text="Registre su mascota"
+        android:textSize="30dp"
+        android:fontFamily="@font/prueba2"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="203dp"
+            android:layout_marginTop="10dp"
+
+            app:srcCompat="@drawable/regis_mascota"
+            tools:srcCompat="@drawable/regis_mascota" />
+
+
+    </LinearLayout>
+
+
+    <Spinner
+        android:id="@+id/spinner_Raza"
+        android:fontFamily="@font/prueba2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:id="@+id/etNombreMascota"
+        android:fontFamily="@font/prueba2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:hint="Nombre mascota"
+        android:layout_height="40dp"
+        android:maxLines="1"
+        android:paddingStart="20dp"
+        android:background="@drawable/input_style"/>
+
+
+    <EditText
+        android:id="@+id/etfotografia"
+        android:fontFamily="@font/prueba2"
+        android:layout_marginTop="20dp"
+        android:hint="fotografia"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:maxLines="1"
+        android:paddingStart="20dp"
+        android:background="@drawable/input_style" />
+
+    <EditText
+        android:id="@+id/etColor"
+        android:fontFamily="@font/prueba2"
+        android:layout_marginTop="20dp"
+        android:hint="Color"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:maxLines="1"
+        android:paddingStart="20dp"
+        android:background="@drawable/input_style" />
+
+
+    <RadioGroup
+        android:id="@+id/radiogrupo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbMacho"
+            android:layout_width="87dp"
+            android:fontFamily="@font/prueba2"
+            android:layout_height="wrap_content"
+            android:text="Macho" />
+
+        <RadioButton
+            android:id="@+id/rbHembra"
+            android:layout_width="94dp"
+            android:fontFamily="@font/prueba2"
+            android:layout_height="wrap_content"
+            android:text="Hembra" />
+
+    </RadioGroup>
+
+
+
+    <Button
+        android:id="@+id/btRegistrar"
+        android:layout_marginTop="30dp"
+        android:text="Registrar"
+        android:fontFamily="@font/prueba2"
+        android:backgroundTint="@color/celeste"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+</LinearLayout>

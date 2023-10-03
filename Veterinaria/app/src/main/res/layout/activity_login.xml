@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".Login">
+
+
+    <TextView
+        android:text="Iniciar Sesión"
+        android:textSize="40dp"
+        android:fontFamily="@font/prueba2"
+        android:textColor="@color/letra"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/etlinkRegistrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:fontFamily="@font/prueba2"
+        android:text="Es tu primera vez aqui? Registrate"
+        tools:layout_editor_absoluteX="74dp"
+        android:textSize="15dp"
+        android:textColor="@color/celeste"
+        tools:layout_editor_absoluteY="68dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="264dp"
+            android:layout_marginTop="10dp"
+
+            app:srcCompat="@drawable/login_new"
+            tools:srcCompat="@drawable/login_new" />
+
+
+    </LinearLayout>
+
+
+
+    <EditText
+        android:id="@+id/etDni"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:hint="Ingrese su dni"
+        android:background="@drawable/input_style"
+        android:inputType="number"
+        android:layout_height="40dp"
+        android:fontFamily="@font/prueba2"
+        android:maxLines="1"
+        android:paddingStart="20dp"
+        />
+
+    <EditText
+        android:id="@+id/etClave"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/prueba2"
+        android:hint="Ingrese su clave"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:maxLines="1"
+        android:paddingStart="20dp"
+        android:background="@drawable/input_style"
+        />
+
+    <TextView
+        android:id="@+id/tvRecuperar"
+        android:text="Olvidaste tu contraseña"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/celeste"
+        android:fontFamily="@font/prueba2"
+        android:layout_height="wrap_content"
+
+        />
+
+    <Button
+        android:id="@+id/btIniciarSesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/prueba2"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/celeste"
+        android:text="Iniciar sesión" />
+
+
+
+
+
+
+</LinearLayout>

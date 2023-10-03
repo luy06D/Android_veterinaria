@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Principal">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/perfil"
+            tools:srcCompat="@drawable/perfil">
+
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Bienvenido!"
+                android:fontFamily="@font/prueba2"
+                android:textSize="25dp"
+                android:textColor="@color/celeste"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Luis David"
+                android:textSize="16dp"
+                android:fontFamily="@font/prueba2"
+                android:textColor="@color/azul_oscuro"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            
+        </LinearLayout>
+        
+  
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:layout_below="@+id/ll1"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardRegistrarMascota"
+                android:clickable="true"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/crema"
+                app:cardCornerRadius="15dp">
+                
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="51dp"
+                        android:layout_height="49dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/perro"
+                        tools:srcCompat="@drawable/perro" />
+
+                    <TextView
+                        android:layout_width="128dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="Registrar Mascota"
+                        android:fontFamily="@font/prueba2"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewBuscarC"
+                android:clickable="true"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/rojo_bajo"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="54dp"
+                        android:layout_height="54dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/competidor"
+                        tools:srcCompat="@drawable/competidor" />
+
+
+                    <TextView
+                        android:layout_width="128dp"
+                        android:layout_height="41dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="Buscar Clientes"
+                        android:fontFamily="@font/prueba2"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewListaM"
+                android:clickable="true"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/azul_oscuro"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="51dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/portapapeles"
+                        tools:srcCompat="@drawable/portapapeles" />
+
+
+                    <TextView
+                        android:layout_width="128dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="Lista de Mascotas"
+                        android:fontFamily="@font/prueba2"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewNuevoUsuario"
+                android:clickable="true"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/celeste"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/nuevo"
+                        tools:srcCompat="@drawable/nuevo" />
+
+
+                    <TextView
+                        android:layout_width="128dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="Nuevo Cliente"
+                        android:fontFamily="@font/prueba2"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

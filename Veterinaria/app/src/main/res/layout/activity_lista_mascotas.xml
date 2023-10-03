@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".Lista_Mascotas">
+
+
+
+    <TextView
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="Mis Mascotas"
+        android:textColor="@color/letra"
+        android:fontFamily="@font/prueba2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="219dp"
+        android:visibility="visible"
+        app:srcCompat="@drawable/mascota_listar"
+        tools:srcCompat="@drawable/mascota_listar" />
+
+    <TextView
+        android:layout_marginBottom="0dp"
+        android:text="Lista de mascotas"
+        android:textColor="@color/letra"
+        android:fontFamily="@font/prueba2"
+        android:layout_width="match_parent"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="459dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:showDividers="middle">
+
+            <ListView
+                android:id="@+id/lvMascotas"
+                android:fontFamily="@font/prueba2"
+                android:layout_width="match_parent"
+                android:layout_height="417dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
